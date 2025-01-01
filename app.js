@@ -10,7 +10,7 @@ mongoose.connect(process.env.DB_URI,{
 
 })
 
-const libraryRouter =  require('../LIBRARY/routes/libraryr');
+const libraryRouter =  require("./routes/libraryr");
 app.use('/api',libraryRouter);
 
 app.use(cors());
